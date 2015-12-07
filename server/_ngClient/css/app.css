@@ -1,0 +1,79 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+	 overflow-y: scroll; /* prevents a scrolling jump */
+}
+
+ 
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+code {
+  font-size: 80%;
+}
+
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* modal styles  of ngIdle */
+.modal-danger .modal-header {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+  padding:9px 15px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-warning .modal-header {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+  padding:9px 15px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+uib-progressbar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}

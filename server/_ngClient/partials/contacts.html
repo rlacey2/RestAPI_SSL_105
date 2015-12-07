@@ -1,0 +1,22 @@
+<div class="container" ">
+  <div class="page-header">
+    <h3>List of contacts from the REST API
+      <code>/contacts</code>
+    </h3>
+  </div>
+ 
+ 
+  <p class="lead">
+    <table class="table table-striped">
+      <tr>
+        <th>Contact Name</th>
+        <th>Email</th>
+      </tr>
+      <tr ng-repeat="c in contacts">
+        <td>{{c.name}}</td>
+        <td>{{c.email}}</td>
+      </tr>
+    </table>
+  </p>
+ 
+</div>

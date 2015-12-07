@@ -1,0 +1,50 @@
+<div class="container" ">
+  <div class="page-header">
+    <h3>User Account Details
+      <code>/api/v1/admin/users</code>
+    </h3>
+  </div>
+	
+
+	 
+  <p class="lead">
+    <table class="table table-striped">
+      <tr>
+        <th>Username</th>
+        <th>Role</th>
+				<th>Action</th>
+      </tr>
+      <tr ng-repeat="u in users">
+        <td>{{u.username}}</td>
+        <td>{{u.role}}</td>
+				<td>
+	         <div class="btn-group" uib-dropdown>
+            <button type="button"
+                    class="btn btn-primary uib-dropdown-toggle"
+                    uib-dropdown-toggle>
+                Tasks <span class="caret"></span>
+            </button>
+            <ul class="uib-dropdown-menu" role="menu">
+                <li>
+                    <a href="javascript:" ng-click="implement()">Edit</a>
+                </li>
+                <li>
+                    <a href="javascript:" ng-click="implement()">Delete</a>
+                </li>
+                <li>
+                    <a href="javascript:" ng-click="implement()">Disable</a>
+                </li>
+								<!--
+                <li class="divider"></li>
+                -->
+                </ul>
+	  </div>
+    
+				</td>
+      </tr>
+    </table>
+  </p>
+ 
+</div>
+
+
