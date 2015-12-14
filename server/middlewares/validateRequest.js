@@ -46,6 +46,11 @@ var validateRequest =  {
 							
 							// Authorize the user to see if s/he can access our resources
 							var dbUser = validateUser(decoded.user.username); // The key would be the logged in user's username
+							
+						 //	need to make this asynch handling???
+							
+							
+							
 							 console.log("===========================================");	
 							 console.log(dbUser);
 						if (dbUser) { // we have a valid user from a the encrypted username
